@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Entry</title>
+  </head>
+  <body>
+    {%for party in party_list %}
+    <h6>{{party}}</h6>
+    {% endfor %}
+    <h1>------</h1>
+    {%for agent in agent_list %}
+    <h6>{{agent}}</h6>
+    {% endfor %}
+    <h1>------</h1>
+    {%for transport in transport_list %}
+    <h6>{{transport}}</h6>
+    {% endfor %}
+    <h1>------</h1>
+    {%for viewer in viewer_list %}
+    <h6>{{viewer}}</h6>
+    {% endfor %}
+  </body>
+</html>
